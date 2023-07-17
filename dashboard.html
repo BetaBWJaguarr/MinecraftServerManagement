@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Server Management</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/css/dashboard.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Minecraft Server Management</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="mt-5">
+    <div class="row server-cards-row">
+      <div class="col-md-3">
+        <aside class="sidebar">
+          <h3 class="sidebar-title">Dashboard</h3>
+          <ul class="sidebar-nav">
+            <li><a href="#" class="sidebar-link">Home</a></li>
+            <li><a href="#" class="sidebar-link">Servers</a></li>
+            <li><a href="#" class="sidebar-link">Settings</a></li>
+          </ul>
+        </aside>
+      </div>
+        <div class="col-md-9">
+          <div class="dashboard-header">
+            <h1 class="dashboard-title">Top Active Servers</h1>
+            <a href="#" class="btn btn-primary">Add Server</a>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card dashboard-card">
+                <div class="card-body">
+                  <h5 class="card-title">Server 1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <ul class="list-group">
+                    <li class="list-group-item">Players Online: 20/50</li>
+                    <li class="list-group-item">Uptime: 3 days 12 hours</li>
+                    <li class="list-group-item">IP Address: 192.168.1.1</li>
+                    <li class="list-group-item">Version: 1.17.1</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card dashboard-card">
+                <div class="card-body">
+                  <h5 class="card-title">Server 2</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <ul class="list-group">
+                    <li class="list-group-item">Players Online: 15/20</li>
+                    <li class="list-group-item">Uptime: 1 day 6 hours</li>
+                    <li class="list-group-item">IP Address: 192.168.1.2</li>
+                    <li class="list-group-item">Version: 1.17.1</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Manage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="dashboard-section">
+                <h2 class="dashboard-section-title">Server Overview</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="dashboard-stat">
+                      <h3 class="dashboard-stat-title">Total Servers</h3>
+                      <p class="dashboard-stat-value">3</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="dashboard-stat">
+                      <h3 class="dashboard-stat-title">Total Players Online</h3>
+                      <p class="dashboard-stat-value">35</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="dashboard-stat">
+                      <h3 class="dashboard-stat-title">Overall Server Status</h3>
+                      <p class="dashboard-stat-value dashboard-stat-online">Online</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="dashboard-section">
+                <h2 class="dashboard-section-title">Recent Activity</h2>
+                <ul class="activity-feed">
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span class="activity-feed-text">Player JohnDoe logged in to Server 1</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-server"></i>
+                    <span class="activity-feed-text">Server 2 started</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-stop-circle"></i>
+                    <span class="activity-feed-text">Server 1 stopped</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="dashboard-section">
+                <h2 class="dashboard-section-title">Server Statistic</h2>
+					<div class="server-list-body">
+						<h5 class="card-title">Server 1</h5>
+						<a href="#" class="btn btn-secondary view-statistics-button">View Statistics</a>
+				</div>
+					<div class="server-list-body">
+						<h5 class="card-title">Server 2</h5>
+						<a href="#" class="btn btn-secondary view-statistics-button">View Statistics</a>
+					<div class="server-list-body">
+						<h5 class="card-title">Server 3</h5>
+						<a href="#" class="btn btn-secondary view-statistics-button">View Statistics</a>
+				</div>
+					<div class="server-list-body">
+						<h5 class="card-title">Server 4</h5>
+						<a href="#" class="btn btn-secondary view-statistics-button">View Statistics</a>
+				</div>
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="dashboard-footer">
+    <div class="container">
+      <span>&copy; 2023 Minecraft Server Management</span>
+    </div>
+  </footer>
+</body>
+</html>

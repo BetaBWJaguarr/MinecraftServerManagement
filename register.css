@@ -1,0 +1,86 @@
+body {
+  background-color: #e9ecef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.form-text {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.form-check-label a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.input-group-text {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-control {
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 14px;
+  width: 85%;
+}
+
+.btn-primary {
+  width: 100%;
+  font-size: 18px;
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: #003978;
+}
+
+.logo {
+  max-width: 200px; /* Adjust the width as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+h1.text-center {
+  margin-top: 0; /* Add this line to remove the default margin-top */
+}
